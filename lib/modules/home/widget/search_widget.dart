@@ -17,12 +17,11 @@ class _SearchWidgetState extends State<SearchWidget> {
   TextEditingController _searchController = TextEditingController();
 
   HomeStore _homeStore = Modular.get<HomeStore>();
-    final key = new GlobalKey<ScaffoldState>();
+  final key = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
-   
     return Scaffold(
-       key: key,
+      key: key,
       appBar: AppBar(),
       body: Column(
         children: [
@@ -271,10 +270,11 @@ class _SearchWidgetState extends State<SearchWidget> {
                             width: 3,
                           ),
                           InkWell(
-                            onTap: (){
-                               Clipboard.setData(new ClipboardData(text: v));
-                               key.currentState!.showSnackBar(
-                    new SnackBar(content: new Text("Copied to Clipboard"),));
+                            onTap: () {
+                              Clipboard.setData(new ClipboardData(text: v));
+                              key.currentState!.showSnackBar(new SnackBar(
+                                content: new Text("Copied to Clipboard"),
+                              ));
                             },
                             child: Icon(
                               Icons.copy,
@@ -305,6 +305,7 @@ class _SearchWidgetState extends State<SearchWidget> {
       ),
     );
   }
+
   @override
   void dispose() {
     // TODO: implement dispose
