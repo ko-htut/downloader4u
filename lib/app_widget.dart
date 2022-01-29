@@ -17,31 +17,11 @@ class _AppWidgetState extends State<AppWidget> {
       debugShowMaterialGrid: false,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        appBarTheme: AppBarTheme(
-          textTheme: TextTheme(
-            title: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w800,
-              color: Colors.white,
-            ),
-          ),
-        ),
-        tabBarTheme: TabBarTheme(
-          labelStyle: TextStyle(
-            fontSize: 16,
-            color: Colors.white,
-            fontWeight: FontWeight.w400,
-          ),
-          unselectedLabelStyle: TextStyle(
-            fontSize: 16,
-            color: Colors.white,
-            fontWeight: FontWeight.w400,
-          ),
-        ),
-        brightness: Brightness.light,
+      
+        // brightness: Brightness.dark,
         textTheme: ThemeData.light()
             .textTheme
-            .apply(fontFamily: 'assets/fonts/pyidaungsu.ttf'),
+            .apply(fontFamily: 'pyidaungsu'),
       ),
     ).modular();
   }

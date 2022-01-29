@@ -69,6 +69,36 @@ mixin _$HomeStore on _HomeStoreBase, Store {
     });
   }
 
+  final _$supportAtom = Atom(name: '_HomeStoreBase.support');
+
+  @override
+  ObservableList<Support?> get support {
+    _$supportAtom.reportRead();
+    return super.support;
+  }
+
+  @override
+  set support(ObservableList<Support?> value) {
+    _$supportAtom.reportWrite(value, super.support, () {
+      super.support = value;
+    });
+  }
+
+  final _$initHomeAsyncAction = AsyncAction('_HomeStoreBase.initHome');
+
+  @override
+  Future<dynamic> initHome() {
+    return _$initHomeAsyncAction.run(() => super.initHome());
+  }
+
+  final _$supportListConfigAsyncAction =
+      AsyncAction('_HomeStoreBase.supportListConfig');
+
+  @override
+  Future<dynamic> supportListConfig() {
+    return _$supportListConfigAsyncAction.run(() => super.supportListConfig());
+  }
+
   final _$getCookieAsyncAction = AsyncAction('_HomeStoreBase.getCookie');
 
   @override
@@ -117,7 +147,8 @@ mixin _$HomeStore on _HomeStoreBase, Store {
 isLoading: ${isLoading},
 errorMessage: ${errorMessage},
 cookie: ${cookie},
-model: ${model}
+model: ${model},
+support: ${support}
     ''';
   }
 }

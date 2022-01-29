@@ -8,7 +8,7 @@ import 'home_route.dart';
 class HomeModule extends Module {
   @override
   final List<Bind> binds = [
-  
+  //
   ];
 
   // Provide all the routes for your module

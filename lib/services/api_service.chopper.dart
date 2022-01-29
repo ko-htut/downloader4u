@@ -33,15 +33,6 @@ class _$APIService extends APIService {
   }
 
   @override
-  Future<Response<LinkModel>> gcsentLink(String link) {
-    final $url = '/';
-    final $body = <String, dynamic>{'link': link};
-    final $request = Request('POST', $url, client.baseUrl, body: $body);
-    return client.send<LinkModel, LinkModel>($request,
-        requestConverter: FormUrlEncodedConverter.requestFactory);
-  }
-
-  @override
   Future<Response<LinkModel>> keyworkSearch(String link, String search) {
     final $url = '/';
     final $body = <String, dynamic>{'link': link, 'search': search};

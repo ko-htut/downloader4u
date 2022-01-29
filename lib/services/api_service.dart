@@ -17,10 +17,6 @@ abstract class APIService extends ChopperService {
 
   @Post(path: '')
   @FactoryConverter(request: FormUrlEncodedConverter.requestFactory)
-  Future<Response<LinkModel>> gcsentLink(@Field('link') String link);
-
-  @Post(path: '')
-  @FactoryConverter(request: FormUrlEncodedConverter.requestFactory)
   Future<Response<LinkModel>> keyworkSearch(
     @Field('link') String link,
     @Field('search') String search,

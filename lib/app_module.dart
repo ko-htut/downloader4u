@@ -1,11 +1,13 @@
 import 'package:downloader4u/app_routes.dart';
 import 'package:downloader4u/services/api_service.dart';
+import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:logger/logger.dart';
 import 'clients/api_client.dart';
 import 'modules/home/home_module.dart';
 import 'modules/home/repositories/home_repo_impl.dart';
 import 'modules/home/store/home_store.dart';
+import 'modules/home/store/search_store.dart';
 import 'modules/splash_widget.dart';
 
 class AppModule extends Module {
@@ -16,7 +18,9 @@ class AppModule extends Module {
     Bind((i) => APIClient()),
     Bind((i) => APIService.create(i.get<APIClient>())),
     Bind((i) => HomeStore()),
+    Bind((i) => SearchStore()),
     Bind((i) => HomeRepositoryImpl.instance),
+     Bind((i) => FirebaseRemoteConfig.instance),
   ];
 
   // Provide all the routes for your module
