@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "889811369012",
+    "project_id": "downloader4u-d301a",
+    "storage_bucket": "downloader4u-d301a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889811369012:android:42163075afa345da64de61",
+        "android_client_info": {
+          "package_name": "u.mmdownload.downloader4u"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889811369012-efnu23pjfd4etc5egv8ckbgdud1rfjsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6dDbFbLkGoJUfU5AsvqTvgOmSi2f9d2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889811369012-efnu23pjfd4etc5egv8ckbgdud1rfjsi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "889811369012-hmqhtp4oq9t9o8hsnsh3vpm611ghrf38.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "u.mmdownload.downloader4u"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

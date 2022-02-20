@@ -17,7 +17,6 @@ class _AppWidgetState extends State<AppWidget> {
       debugShowMaterialGrid: false,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-      
         // brightness: Brightness.dark,
         textTheme: ThemeData.light()
             .textTheme
