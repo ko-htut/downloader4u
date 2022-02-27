@@ -27,7 +27,15 @@ class _HomeWidgetState extends State<HomeWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Downloader 4u"),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text("Downloader 4u"),
+             Icon(Icons.info_outline),
+          ],
+        ),
+        elevation: 0.5,
+        
         // backgroundColor: Colors.white,
       ),
       body: Observer(builder: (context) {
@@ -42,6 +50,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                           args: true);
                     },
                     child: Card(
+                       elevation: 0.5,
                       child: Container(
                           height: 45,
                           child: Center(
@@ -62,6 +71,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                           args: false);
                     },
                     child: Card(
+                       elevation: 0.5,
                       child: Container(
                           height: 45,
                           child: Center(
@@ -79,6 +89,7 @@ class _HomeWidgetState extends State<HomeWidget> {
               ],
             ),
             Card(
+              elevation: 0.5,
               child: SizedBox(
                 width: double.infinity,
                 child: Column(
@@ -106,6 +117,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                               )))
                           .toList(),
                     ),
+                    SizedBox(height: 5,),
                   ],
                 ),
               ),
